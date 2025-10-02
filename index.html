@@ -1,0 +1,495 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Desarrollo de Identidad Visual Orizabeña | Ana Victoria Salvador Delgado</title>
+
+    <link rel="stylesheet" href="lib/bootstrap.min.css">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnQ+p+WwFfP5l+gT8R8T5X5B5e8X8N+D8K5J5K5J" crossorigin="anonymous">-->
+
+
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.7; /* Mejor legibilidad */
+        }
+        
+        /* Definición de colores base */
+        :root {
+            --bs-primary: #95B0DB; /* Azul/Lavanda - Principal para Headers y Enfasis */
+            --bs-secondary: #95D3DB; /* Celeste - Subtítulos y Destacados */
+            --bs-success: #95DBC0; /* Menta/Verde Agua - Acciones y Alerts */
+            --bs-info: #E6F3FF; /* Azul claro de contraste para fondos */
+        }
+
+        /* Sobreescritura de estilos de Bootstrap con los colores base */
+        .bg-primary-custom { background-color: var(--bs-primary) !important; }
+        .text-primary-custom { color: var(--bs-primary) !important; }
+        .bg-secondary-custom { background-color: var(--bs-secondary) !important; }
+        .text-secondary-custom { color: var(--bs-secondary) !important; }
+        .bg-success-custom { background-color: var(--bs-success) !important; }
+        .btn-custom {
+            background-color: var(--bs-success);
+            border-color: var(--bs-success);
+            color: #212529; /* Texto oscuro para buen contraste */
+        }
+        .btn-custom:hover {
+            background-color: #79c9a8; /* Un tono un poco más oscuro al pasar el mouse */
+            border-color: #79c9a8;
+        }
+
+        .hero-section {
+            background-color: var(--bs-info);
+            padding: 80px 0 50px;
+            border-bottom: 5px solid var(--bs-primary);
+        }
+
+        .accordion-button:not(.collapsed) {
+            color: #fff;
+            background-color: var(--bs-primary);
+            box-shadow: none;
+        }
+        .accordion-button {
+             background-color: var(--bs-secondary);
+             color: #212529;
+             font-weight: bold;
+        }
+    </style>
+</head>
+<body data-bs-spy="scroll" data-bs-target="#navbarContent" data-bs-offset="56">
+
+    <nav class="navbar navbar-expand-lg sticky-top bg-primary-custom" id="navbarContent">
+        <div class="container-fluid">
+            <a class="navbar-brand text-white fw-bold" href="#top">A.V.S.D. Portafolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item"><a class="nav-link text-white" href="#introduccion">1. Introducción</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#objetivos">2. Objetivos</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#justificacion">4. Justificación</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#estancia">5. Estancia CCEEO</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#marco-teorico">6. Marco Teórico</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#proceso-creacion">7. Proceso de Creación</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#conclusiones">Conclusiones</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero-section text-center" id="top">
+        <div class="container">
+            <p class="mb-1">Benemérita Universidad Autónoma de Puebla | Facultad de Artes Plásticas y Audiovisuales</p>
+            <h1 class="display-5 fw-bold text-primary-custom">
+                ANTEPROYECTO PARA PORTAFOLIO PROFESIONAL
+            </h1>
+            <h2 class="display-6 fw-bold text-primary-custom border-bottom border-primary-custom pb-3 mb-4 mx-auto" style="max-width: 800px;">
+                “DESARROLLO DE UNA IDENTIDAD VISUAL ORIZABEÑA EN LA PRODUCCIÓN ARTÍSTICA”
+            </h2>
+            <p class="lead mb-0">PRESENTA</p>
+            <h3 class="fs-4 fw-normal mb-1">Ana Victoria Salvador Delgado</h3>
+            <p class="text-muted mb-0">Matrícula: 201507133</p>
+            <p class="text-muted mb-0 small">DIRECTOR: Dra. | PROFESOR DE DIPLOMADO DE TITULACIÓN: DRA. </p>
+            <p class="mt-3 small">Septiembre 2025</p>
+        </div>
+    </header>
+
+    <main class="container my-5">
+        <div class="row mb-5">
+            <div class="col-12">
+                <h2 class="text-secondary-custom">Contenido</h2>
+                <div class="row">
+                    <div class="col-md-6">
+                        <ul class="list-unstyled">
+                            <li>1.-Introducción</li>
+                            <li>2.-Objetivo general</li>
+                            <li>3.-Objetivos específicos</li>
+                            <li>4.-Justificación</li>
+                            <li>5.-La estancia en el Centro Cultural y Estudios Escénicos de Orizaba:</li>
+                            <li>5.1 Gestión de la creación del área de artes plásticas</li>
+                            <li>5.2 Comité organizador del 4to Festival Internacional de Teatro Citlaltépetl en Orizaba y el resto de la región de las Altas Montañas</li>
+                            <li>5.3 Pruebas, bocetos, prototipos, ensayos o ejercicios previos.</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <ul class="list-unstyled">
+                            <li>6.-Marco teórico</li>
+                            <li>7.-Proceso de creación</li>
+                            <li>7.1 Fase Inicial</li>
+                            <li>7.2 Desarrollo</li>
+                            <li>7.3 Boceto sobre identidad orizabeña</li>
+                            <li>7.4 Correcciones</li>
+                            <li>7.5 Producto final</li>
+                            <li>Conclusiones</li>
+                            <li>8.- Anexos</li>
+                            <li>7.-Bibliografía</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section id="introduccion" class="mb-5 p-4 border rounded shadow-sm bg-light">
+            <h2 class="text-primary-custom mb-3 border-bottom border-primary-custom">1. Introducción</h2>
+            <p>En el presente trabajo comparto la estancia que realicé en el Centro Cultural y Estudios Escénicos de Orizaba (CCEEO) en los meses de junio y julio del año 2021, en donde me dediqué a la docencia en el área de artes plásticas para niños y jóvenes, en el cual realizaron productos creados con las técnicas de dibujo y pintura. Por otro lado, realicé producción artística sobre el tema de identidad orizabeña con el propósito de promover la cultura en la ciudad, retomando temáticas de mi carrera como lo son la observación del entorno, la estimulación creativa para las infancias, técnicas de aprendizaje adaptadas a un curso de verano y aplicando en estrategias didácticas para crear productos que como propósito final fue un proyecto de exposición artística en el mismo centro cultural.</p>
+            <p>En el caso del registro, realicé tres obras artísticas basadas en la identidad orizabeña con el propósito de promover la cultura desde un punto de vista subjetivo diferente a lo que el gobierno municipal pretende “vender” como Orizaba al resto de los estados del país y del mundo.</p>
+            
+            <h4 class="mt-4 text-secondary-custom">Elementos y Conceptos Específicos Influyentes:</h4>
+            <div class="row">
+                <div class="col-md-6">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item bg-light">1. Artistas: Justo Sierra, Gabriel Barranco, José María Velasco, Manuel Gonzales, Pbro y Lic. Don José Miguel Sánchez Oropeza, Lic. Adrián Sánchez Oropeza, Lic. Octavio Sánchez Oropeza.</li>
+                        <li class="list-group-item bg-light">2. Búsqueda de una identidad orizabeña.</li>
+                        <li class="list-group-item bg-light">3. Espacios de vinculación cultural en la ciudad de Orizaba (CCEEO, Centro Orizaba, Foro Niebla, Casa de Cultura del ITO, IRBAO, Estudio Agua y Raz).</li>
+                        <li class="list-group-item bg-light">4. Gestión de una nueva área de Artes Plásticas: técnicas de enseñanza, Pintura y Dibujo.</li>
+                        <li class="list-group-item bg-light">5. Obra mural de José Clemente Orozco, Revolución Social" o "Reconstrucción" (Palacio Municipal, 1926).</li>
+                        <li class="list-group-item bg-light">6. Paisajismo de las Altas Montañas.</li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item bg-light">7. Proyecto de Murales patrocinado por COMEX y el Ayuntamiento.</li>
+                        <li class="list-group-item bg-light">7.1 Teatro y galería: Teatro Ignacio de la Llave.</li>
+                        <li class="list-group-item bg-light">7.2 Museo de la capital: Museo de Arte del Estado de Veracruz (MAEV).</li>
+                        <li class="list-group-item bg-light">7.3 Espacios al aire libre: Jardín del Arte.</li>
+                        <li class="list-group-item bg-light">7.4 Galerías de venta: Atelier Xalli, Poliforum Mier y Pesado.</li>
+                        <li class="list-group-item bg-light">7.5 Museos interactivos y atractivos turísticos (Palacio de Hierro y sus museos, Casa de las Leyendas, Casa Vegas, Museo Francisco Gabilondo Soler).</li>
+                        <li class="list-group-item bg-light">8. Referencias en visitas previas en el Museo de Arte del Estado de Veracruz (MAEV).</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="objetivos" class="mb-5">
+            <h2 class="text-primary-custom mb-3 border-bottom border-primary-custom">2. Objetivo General</h2>
+            <p class="lead">El objetivo general de este trabajo es dar a conocer mi desarrollo creativo en un portafolio profesional en marco de las actividades realizadas en el Centro Cultural y Estudios Escénicos de Orizaba (CCEEO).</p>
+            <p>Las actividades fueron la docencia y fundación del taller de artes plásticas con las técnicas que abarcaron el dibujo y la pintura artística, colaboración en el Tercer Festival Internacional de Teatro Citlatépetl y después formar parte del comité organizador de la cuarta edición del Festival Internacional de Teatro Citlaltépetl el cual actualmente se denomina el “Encuentro Internacional de Identidad y Arte (EIIA)”.</p>
+            
+            <div class="alert bg-success-custom my-4" role="alert">
+                <h4 class="alert-heading">Producto Principal: Pieza "Mahtlaktli Ehekatl"</h4>
+                <p class="mb-0">Asimismo, comparto a manera profesional el desarrollo del proceso creativo de la pieza artística denominada: <strong>“Mahtlaktli Ehekatl”</strong> como producto principal de la investigación, la experiencia y la motivación de crear piezas sobre la identidad orizabeña.</p>
+            </div>
+
+            <h2 class="text-primary-custom mb-3 border-bottom border-primary-custom">3. Objetivos Específicos</h2>
+            <ul class="list-group shadow">
+                <li class="list-group-item d-flex align-items-center">
+                    <span class="badge bg-primary-custom rounded-pill me-3">1</span>Identificar los productos culturales y patrimoniales de la ciudad de Orizaba.
+                </li>
+                <li class="list-group-item d-flex align-items-center">
+                    <span class="badge bg-primary-custom rounded-pill me-3">2</span>Enfocar un desarrollo artístico basado en la experiencia profesional.
+                </li>
+                <li class="list-group-item d-flex align-items-center">
+                    <span class="badge bg-primary-custom rounded-pill me-3">3</span>Proponer nuevas investigaciones y gestión de proyectos de movilidad para que el público que se encuentre en la zona de las Altas Montañas tenga un mejor acceso a la producción artística local.
+                </li>
+                <li class="list-group-item d-flex align-items-center">
+                    <span class="badge bg-primary-custom rounded-pill me-3">4</span>Integrar este portafolio como un producto de investigación y aporte para el Archivo Municipal de Orizaba (AMO) para favorecer a las próximas generaciones intrigadas por la investigación cultural y promover espacios libres.
+                </li>
+                <li class="list-group-item d-flex align-items-center">
+                    <span class="badge bg-primary-custom rounded-pill me-3">5</span>Compartir el desarrollo creativo de la obra artística Mahtlaktli Ehekatl como producto final del portafolio profesional.
+                </li>
+            </ul>
+        </section>
+
+        <section id="justificacion" class="mb-5 bg-secondary-custom p-4 rounded shadow">
+            <h2 class="mb-3 border-bottom border-dark pb-2">4. Justificación</h2>
+            <p>El presente proyecto se fundamenta en la investigación de procesos cognitivos para el desarrollo creativo y emocional de los niños con bases teóricas en el mundo del arte, específicamente hacia las artes plásticas. Surge de la necesidad de fortalecer un **sentido de pertenencia cultural** en mi ciudad natal: Orizaba, Veracruz. Ya que resulta fundamental rescatar, preservar y proyectar los elementos que constituyen la identidad local principalmente en el área de las artes plásticas.</p>
+            
+            <p>La ciudad de Orizaba ha permanecido en constantes transformaciones sociales, económicas, históricas y culturales desde la época prehispánica hasta la industrialización, marcando la manera en que sus habitantes se reconocen a sí mismos (García Márquez, 2010). También es importante mencionar el desarrollo de la **clase obrera** a través de la organización y exigencia de sus derechos sociales como parte fundamental de la identidad (Héau-Lambert, 2006).</p>
+
+            <p>La búsqueda de una identidad visual busca solucionar la desvinculación entre la comunidad y el patrimonio cultural mediante la producción artística como herramienta de **cohesión social, difusión cultural y proyección turística** para un consumo responsable de índole patrimonial. Mi proyecto funge como un medio para visibilizar el avance y adaptación de la sociedad orizabeña usando como referencia a los artistas emergentes, la promoción de espacios culturales comunitarios y fortalecer procesos de gestión cultural que no cuentan con la difusión adecuada.</p>
+            <p class="small">El proyecto busca vincular la historia, sociedad y arte que bajo la experiencia de la estudiante Ana Victoria pudo adquirir gracias a la estancia del CCEEO, participando activamente en la difusión y gestión de proyectos independientes con el fin de preservar la memoria como una construcción de nuevas formas de expresión contemporánea en las que a través de su expresión artística consolidan una identidad orizabeña activa y reconocible.</p>
+        </section>
+        
+        <section id="estancia" class="mb-5">
+            <h2 class="text-primary-custom mb-3 border-bottom border-primary-custom">5. La estancia en el Centro Cultural y Estudios Escénicos de Orizaba:</h2>
+            <p>Después de que mi proyecto inicial en el Instituto Poblano de la Juventud (IPJ) cesó, regresé a Orizaba en 2020 y encontré el **CCEEO** (Centro Cultural y Estudios Escénicos de Orizaba). Me puse en contacto para ser docente en el área de artes plásticas (dibujo y pintura artística). La estancia me dio la oportunidad de mi primer acercamiento laboral y la propuesta de participar en la gestión del Festival Internacional de Teatro Citlaltépetl (FITC).</p>
+
+            <div class="accordion" id="accordionEstancia">
+                <div class="accordion-item shadow-sm">
+                    <h2 class="accordion-header" id="headingFiveOne">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFiveOne" aria-expanded="false" aria-controls="collapseFiveOne">
+                            5.1 Gestión de la creación del área de artes plásticas
+                        </button>
+                    </h2>
+                    <div id="collapseFiveOne" class="accordion-collapse collapse" aria-labelledby="headingFiveOne" data-bs-parent="#accordionEstancia">
+                        <div class="accordion-body">
+                            <p>Después de mis primeras actividades, fui contratada para darle seguimiento a las clases, siendo un área nueva sin espacio propio. Adaptamos mesas, conseguimos caballetes y un estante.</p>
+                            <h5 class="text-secondary-custom">Objetivos del Área de Artes Plásticas:</h5>
+                            <ul>
+                                <li>Desarrollar la capacidad de creatividad, desarrollo perceptivo y facultades sensoriales.</li>
+                                <li>Favorecer el manejo de materiales diversos que permitieran crear técnicas pictóricas propias.</li>
+                                <li>Desarrollar la motricidad fina y control visomotor para enriquecer el lenguaje plástico.</li>
+                                <li>Aplicar la representación tridimensional de los elementos en el plano físico bidimensional.</li>
+                                <li>Afianzar la sensibilidad con los colores primarios, secundarios, complementarios, fríos y cálidos.</li>
+                                <li>Promover la producción de bienes artístico-culturales, individuales y colectivos.</li>
+                            </ul>
+                            <p class="small text-muted">Durante la organización del 3er FITC, fui invitada a colaborar creando un logotipo con la temática: raíces prehispánicas de las Altas Montañas. Los tres conceptos claves eran: un chayote (Orizaba), las máscaras de la comedia y la tragedia (teatro), y un objeto representativo de la temática.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item shadow-sm">
+                    <h2 class="accordion-header" id="headingFiveTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFiveTwo" aria-expanded="false" aria-controls="collapseFiveTwo">
+                            5.2 Comité organizador del 4to Festival Internacional de Teatro Citlaltépetl
+                        </button>
+                    </h2>
+                    <div id="collapseFiveTwo" class="accordion-collapse collapse" aria-labelledby="headingFiveTwo" data-bs-parent="#accordionEstancia">
+                        <div class="accordion-body">
+                            <h5 class="text-secondary-custom">3ra Edición (2021) - Identidad Marcaria</h5>
+                            <p>Mi primera participación fue en la 3ra edición del festival en 2021. Las actividades incluyeron generar una identidad marcaria (retomar el chayote, las máscaras y un elemento específico de la edición), crear una paleta de colores y un logo/sello para 2021. Se realizaron 20 dibujos de borrador, tres propuestas seleccionadas, y de estas, cuatro borradores limpios (monocromáticos, acuarela, prismacolor) y el producto digital final. También me encargué de identidad marcaria, edición de video y fotografía, y marketing digital.</p>
+                            
+                            <h5 class="text-secondary-custom mt-4">4ta Edición (2022) y Cambio de Nombre</h5>
+                            <p>En 2022, fui invitada a formar parte del comité organizador. La temática fue la **época de cine de oro mexicano**. Me enfrenté a obstáculos como la creación del nuevo logotipo, diseño digital y la gestión económica/logística, viajando a municipios aledaños.</p>
+                            <p>Para 2023, el proyecto cambió su nombre a **“Encuentro Internacional de Identidad y Arte de las Altas Montañas”** (EIIA). Concluí mi tiempo en el comité en 2023 para adentrarme en la docencia en escuelas privadas y públicas en 2024, adaptándome a la Nueva Escuela Mexicana (NEM).</p>
+                            <p class="small text-muted">El área de artes plásticas tuvo éxito, creando un grupo de hasta 15 personas, hasta que finiquité mis actividades en agosto para mudarme nuevamente a Puebla.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item shadow-sm">
+                    <h2 class="accordion-header" id="headingFiveThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFiveThree" aria-expanded="false" aria-controls="collapseFiveThree">
+                            5.3 Pruebas, bocetos, prototipos, ensayos o ejercicios previos.
+                        </button>
+                    </h2>
+                    <div id="collapseFiveThree" class="accordion-collapse collapse" aria-labelledby="headingFiveThree" data-bs-parent="#accordionEstancia">
+                        <div class="accordion-body">
+                            <h5 class="text-secondary-custom">Errores y Correcciones</h5>
+                            <p>Un error fue la **mala organización administrativa de recursos** (proyecto sin fines de lucro), con gastos fuera del presupuesto por falta de un contador o administrador. Además, se me designaron demasiadas tareas, lo que generó estrés y desorganización.</p>
+                            <p>Los aprendizajes fueron: **mayor organización** con cronograma y la necesidad de **más personas** para las tareas asignadas.</p>
+                            <p>Las obras de **carboncillo** de personajes como “La Abuelita de México” (Sarah García) y “Cantinflas” tuvieron un papel importante, ya que se hicieron *reels* del proceso que se hicieron virales, fomentando la difusión del proyecto FITC.</p>
+                            <p>Se comparte uno de los 15 bocetos que realicé para el logotipo de la 4ta edición, combinando personajes icónicos como María Félix y Pedro Infante.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="marco-teorico" class="mb-5 p-4 border rounded shadow-sm bg-light">
+            <h2 class="text-primary-custom mb-3 border-bottom border-primary-custom">6. Marco Teórico</h2>
+            <p>El estudio de la identidad cultural en Orizaba se hace a partir del reconocimiento de su **memoria histórica, social y artística**.</p>
+            
+            <h4 class="text-secondary-custom mt-4">Memoria Histórica y Archivo Municipal (AMO)</h4>
+            <p>El Archivo Histórico Municipal de Orizaba resguarda documentos desde el siglo XVI, disponibles para consulta pública, lo que sostiene la memoria colectiva y brinda a los artistas una fuente de inspiración.</p>
+
+            <h4 class="text-secondary-custom mt-4">Identidad Social y Movimiento Obrero</h4>
+            <p>La identidad social fue moldeada por la **industrialización**. La clase obrera fusionó tradiciones campesinas con la vida urbana/industrial, constituyéndose como un símbolo de **resistencia y dignidad** (Héau-Lambert, 2006; Rajchenberg, 1995). Esto llevó a la organización política y a la creación de la CROM en 1919.</p>
+
+            <h4 class="text-secondary-custom mt-4">Arte y Gestión Cultural</h4>
+            <p>La apertura de espacios como el **“Jardín del Arte”** y **“Atelier Xalli”** es clave para acercar el arte contemporáneo a la población, democratizando el acceso. Sin embargo, persiste el desafío de promover el arte en las provincias, donde la sociedad no siempre valora o consume estas propuestas (El Sol de Orizaba, 2023).</p>
+            <p>Eventos como el **Encuentro Internacional de Identidad y Arte** (CCEEO) fortalecen la identidad local, mostrando la cultura como un motor de cohesión social. La historia del **IRBAO**, patrocinado por la Cervecería Moctezuma y el Sindicato de Obreros, resalta la importancia del sector obrero en la cultura.</p>
+            <p class="mt-3">En conclusión, la identidad visual orizabeña es un proceso que nace de la **memoria histórica** (archivos), se transforma con las **luchas sociales** (clase obrera) y se proyecta con el **arte contemporáneo** (espacios culturales).</p>
+        </section>
+
+        <section id="proceso-creacion" class="mb-5">
+            <h2 class="text-primary-custom mb-3 border-bottom border-primary-custom">7. Proceso de Creación</h2>
+            <div class="accordion" id="accordionProceso">
+                <div class="accordion-item shadow-sm">
+                    <h2 class="accordion-header" id="headingSevenOne">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSevenOne" aria-expanded="false" aria-controls="collapseSevenOne">
+                            7.1 Fase Inicial y 7.2 Desarrollo (Metodología Creativa)
+                        </button>
+                    </h2>
+                    <div id="collapseSevenOne" class="accordion-collapse collapse" aria-labelledby="headingSevenOne" data-bs-parent="#accordionProceso">
+                        <div class="accordion-body">
+                            <h5 class="text-secondary-custom">Fase Inicial (Estancia CCEEO):</h5>
+                            <p>Estancia de julio y agosto de 2021. El propósito principal fue crear un espacio para artes plásticas, dando clases de dibujo y pintura. A su vez, investigué el patrimonio cultural local y me enfoqué en la producción artística sobre la identidad orizabeña. También participé en el FITC (Festival Internacional de Teatro Citlaltépetl) y, posteriormente, en el “Encuentro Interdisciplinario de las Altas Montañas” (2023) como parte del comité organizador, diseño de logotipo, toma/edición de fotografía y video.</p>
+                            
+                            <h5 class="text-secondary-custom mt-4">Desarrollo (Metodología):</h5>
+                            <p>Mi proceso creativo es metodológico, requiere sustento conceptual y estructura.</p>
+                            <ol>
+                                <li><strong>Investigación:</strong> Búsqueda de información a través de recursos digitales, preguntas y frases clave.</li>
+                                <li><strong>Bocetaje:</strong> Lluvia de ideas esquemática en libreta (lápiz o lapicero) para organizar la propuesta.</li>
+                                <li><strong>Redacción:</strong> Primera versión de la propuesta artística.</li>
+                                <li><strong>Referencias Visuales:</strong> Recopilación de fotografías, o producción propia de referencias.</li>
+                            </ol>
+                            <h6 class="mt-3">Rutas de Desarrollo Visual:</h6>
+                            <ul>
+                                <li>**Proyectos Plásticos:** Boceto principal en libreta.</li>
+                                <li>**Proyectos Digitales:** Creación de tableros de referencias (Pinterest).</li>
+                                <li>**Proyectos de Gran Formato:** Impresión y organización de referencias a escala real para visualizar la composición final.</li>
+                            </ul>
+                            
+                            <div class="alert bg-success-custom mt-4" role="alert">
+                                **Investigación Aplicada (Tonalli):** La investigación se enfocó en las raíces prehispánicas y la "búsqueda de identidad". Se contrató una lectura decodificadora de **Tonalli** con la Dra. Liliana Martínez Téllez (especialista en Códice Borgia), lo que aportó profundidad simbólica a la obra basada en la astrología de las Altas Montañas. Esto derivó en la pieza **Tonalli Mahtlaktli Ehekatl**.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item shadow-sm">
+                    <h2 class="accordion-header" id="headingSevenThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSevenThree" aria-expanded="false" aria-controls="collapseSevenThree">
+                            7.3 Boceto sobre identidad orizabeña (Análisis Semiótico)
+                        </button>
+                    </h2>
+                    <div id="collapseSevenThree" class="accordion-collapse collapse" aria-labelledby="headingSevenThree" data-bs-parent="#accordionProceso">
+                        <div class="accordion-body">
+                            <p>La siguiente imagen que se comparte funge como parte medular de la investigación de la identidad local, enfatizando elementos principales de la región de las Altas Montañas.</p>
+                            
+                            <div class="row mt-4">
+                                <div class="col-md-4 mb-3">
+                                    <div class="card h-100 bg-secondary-custom">
+                                        <div class="card-header fw-bold">Nivel Denotativo (Lo que se ve)</div>
+                                        <div class="card-body">
+                                            <ul>
+                                                <li>Figura masculina de pie, semidesnuda, con penacho y capa.</li>
+                                                <li>Porta una vara o rama con hojas y frutos (parece planta de café).</li>
+                                                <li>Usa sandalias y vestimenta de corte prehispánico.</li>
+                                                <li>Penacho grande con plumas y una estructura semicircular detrás.</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 mb-3">
+                                    <div class="card h-100 bg-secondary-custom">
+                                        <div class="card-header fw-bold">Nivel Connotativo (Lo que significa)</div>
+                                        <div class="card-body">
+                                            <ul>
+                                                <li>Figura masculina: Representa fortaleza, origen y pertenencia. Sugiere a un líder o personaje fundacional.</li>
+                                                <li>Vestimenta prehispánica y penacho: Señala raíces indígenas, herencia cultural y alude a un linaje mexica/totonaco.</li>
+                                                <li>Planta de café: Símbolo icónico del territorio; es fundamental en la economía, paisaje y cultura de Orizaba.</li>
+                                                <li>Postura erguida y mirada frontal: Denota dignidad, resistencia y orgullo de origen.</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 mb-3">
+                                    <div class="card h-100 bg-secondary-custom">
+                                        <div class="card-header fw-bold">Códigos Culturales</div>
+                                        <div class="card-body">
+                                            <ul>
+                                                <li>Mesoamericanos: Indumentaria y símbolos guerreros.</li>
+                                                <li>Locales: Café como producto histórico de la zona montañosa de Veracruz.</li>
+                                                <li>Narrativa visual: Mezcla pasado (indígena) y presente (café) para crear un relato de continuidad.</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <h6 class="mt-4 text-primary-custom">Interpretación (Síntesis)</h6>
+                            <p>La figura central se erige como un **guardián silencioso de la memoria y del territorio**. La rama de café y la indumentaria prehispánica dialogan visualmente, entrelazando dos ejes de identidad: la herencia indígena y la cultura cafetalera. La pieza propone un mito visual para el presente, invitando a mirar Orizaba como un espacio donde la tradición y la modernidad se funden en un mismo emblema de pertenencia y orgullo colectivo.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="accordion-item shadow-sm">
+                    <h2 class="accordion-header" id="headingSevenFour">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSevenFour" aria-expanded="false" aria-controls="collapseSevenFour">
+                            7.4 Correcciones
+                        </button>
+                    </h2>
+                    <div id="collapseSevenFour" class="accordion-collapse collapse" aria-labelledby="headingSevenFour" data-bs-parent="#accordionProceso">
+                        <div class="accordion-body">
+                            <p>Los errores a resaltar en la gestión fueron la **mala organización administrativa** de los recursos al ser un proyecto sin fines de lucro, lo que llevó a gastos innecesarios por falta de un especialista.</p>
+                            <h5 class="text-secondary-custom">Tareas Designadas:</h5>
+                            <ol>
+                                <li>Crear una identidad marcaria (ej. tercera edición: identidad prehispánica; cuarta edición: cine de oro).</li>
+                                <li>Aportar en decisiones logísticas y conversar con presidentes/encargados culturales de municipios.</li>
+                                <li>Crear vínculo con grandes, medianas y microempresas para obtener apoyo económico.</li>
+                                <li>Asistir a juntas y dirigir grupos de voluntariado.</li>
+                            </ol>
+                            <p>El trabajo en el subgrupo de Redes y Diseño junto con el Lic. en Comunicación fue estresante y desorganizado por la falta de comunicación y equidad.</p>
+                            <p>Los **aprendizajes** fueron: **mayor organización** con un cronograma y la necesidad de **más personas** para las tareas asignadas, dado el esfuerzo, tiempo y dinero invertido.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item shadow-sm">
+                    <h2 class="accordion-header" id="headingSevenFive">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSevenFive" aria-expanded="false" aria-controls="collapseSevenFive">
+                            7.5 Producto final
+                        </button>
+                    </h2>
+                    <div id="collapseSevenFive" class="accordion-collapse collapse" aria-labelledby="headingSevenFive" data-bs-parent="#accordionProceso">
+                        <div class="accordion-body">
+                            <p>La participación en eventos culturales fortaleció la línea de investigación. El **Centro Orizaba** fue sede y participé en una exposición donde conocí a una maestra enfocada en el rescate de las raíces prehispánicas. La investigación sobre el **Tonalli** enriqueció la perspectiva creativa.</p>
+                            <p class="alert bg-success-custom">La pieza **Tonalli Mahtlaktli Ehekatl** fue presentada en la exposición **“Oscuridades Recurrentes”** en la galería del Teatro Llave de Orizaba, dentro del marco del diplomado.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="conclusiones" class="mb-5 p-4 border rounded shadow-lg">
+            <h2 class="text-primary-custom mb-3 border-bottom border-primary-custom">8. Conclusiones</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <h4 class="text-secondary-custom">Aporte Artístico y Crítica Cultural</h4>
+                    <p>Mi obra fomenta el reconocimiento y la apropiación cultural de los ciudadanos al reivindicar símbolos locales. Se posiciona de manera crítica frente al discurso oficial de identidad que a menudo reproduce un **eurocentrismo estético** (heredado de influencias francesas, españolas e italianas en Orizaba). Mi trabajo es un puente entre el rescate de la memoria y la crítica cultural, mostrando que el arte no solo decora, sino que transforma la percepción social.</p>
+                </div>
+                <div class="col-md-6">
+                    <h4 class="text-secondary-custom">Marco Teórico Aplicado</h4>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item bg-white"><strong>Educación Artística (Lowenfeld y Vygotsky):</strong> El arte es clave para el desarrollo creativo e integral, y el aprendizaje ocurre en contexto cultural. Mi pedagogía en el CCEEO se alineó con el constructivismo, fortaleciendo la identidad cultural desde edades tempranas.</li>
+                        <li class="list-group-item bg-white"><strong>Pensamiento Decolonial (Quijano y Mignolo):</strong> Mi trabajo propone una relectura que rescata elementos propios del contexto local (obrero, ferrocarril, paisaje), siendo un acto de resistencia cultural frente a lo hegemónico.</li>
+                        <li class="list-group-item bg-white"><strong>Capital Cultural (Bourdieu):</strong> Mi participación en el FITC incrementó mi capital simbólico, insertando mi desarrollo artístico en redes de producción cultural y consolidando a Orizaba como referente artístico.</li>
+                    </ul>
+                </div>
+            </div>
+            <p class="mt-4">Este portafolio constituye el cierre de una etapa fundamental y evidencia la consolidación de mis competencias. Reafirma el compromiso con la ética, la contribución constante y la importancia de los vínculos sociales dentro del ámbito de las artes plásticas.</p>
+        </section>
+
+        <hr class="my-5">
+
+        <section id="anexos-bibliografia" class="mb-5">
+            <h2 class="text-primary-custom mb-3 border-bottom border-primary-custom">9. Anexos</h2>
+            <p>Este portafolio incluye imágenes y referencias visuales que se adjuntan por separado (ej. imagen promocional de colaboración, artículo de prensa de Jardín del Arte).</p>
+            
+            <h2 class="text-primary-custom my-4 border-bottom border-primary-custom">10. Bibliografía</h2>
+            <div class="small">
+                <ol>
+                    <li>Al Calor Político. (2023, agosto 12). Inauguran galería comunitaria en Orizaba para promover el arte contemporáneo.</li>
+                    <li>Armando López Macip. (2025, 1.7 años atrás). Wikipedia.</li>
+                    <li>BibGuru. (s/f).</li>
+                    <li>ChatGPT. (s/f).</li>
+                    <li>El Buen Tono. (2022, julio 16). Casa 243: Galería de arte comunitaria en Orizaba.</li>
+                    <li>El Sol de Orizaba. (2023, diciembre 3). ¿Por qué es difícil promover el arte en las provincias?</li>
+                    <li>El Sol de Orizaba. (2024, febrero 21). Encuentro de Arte y Cultura de las Altas Montañas 2024 en Orizaba: fechas y sedes.</li>
+                    <li>Figueiras, M. (2023, enero 10). ¿Cuál es la importancia del ferrocarril en Orizaba?</li>
+                    <li>Gabriel Barranco. (2025, julio). Wikipedia.</li>
+                    <li>García, P. (2015). Identidad cultural y eurocentrismo en el arte mexicano contemporáneo.</li>
+                    <li>González, M. (2010). Arte y paisaje en la zona de las altas montañas.</li>
+                    <li>Historia de Orizaba. (2025). Wikipedia.</li>
+                    <li>Imagen del Golfo. (2023, junio 9). “LÚDICO”: Una celebración del arte y la imaginación a presentarse en Orizaba.</li>
+                    <li>Instagram. (s/f).</li>
+                    <li>José Justo Montiel. (septiembre, 2024). Wikipedia.</li>
+                    <li>José María Jara. (octubre, 2024). Wikipedia.</li>
+                    <li>Lira, C. (2017). Arquitectura y presencia francesa en Orizaba: el legado Barcelonnette.</li>
+                    <li>Los códices del Grupo Borgia. (2016, agosto 5). Arqueología Mexicana.</li>
+                    <li>Martínez, L. (2023). Decodificación de Tonalli.</li>
+                    <li>Morales, J. (2012). El ferrocarril y el desarrollo urbano de Orizaba en el siglo XIX.</li>
+                    <li>Museo de Arte del Estado de Veracruz. (2019). Catálogo de la colección permanente.</li>
+                    <li>Museo de Arte del Estado de Veracruz. (2023, mayo 10). Wikipedia.</li>
+                    <li>Museo Virtual UG. (2021). Orizaba.</li>
+                    <li>Organización Editorial Mexicana (OEM). (2023, septiembre 8). 5° Encuentro Internacional de Identidad y Arte en Orizaba: fechas y sedes.</li>
+                    <li>Rajchenberg, E. (1995). La clase obrera de Orizaba.</li>
+                    <li>Sánchez Oropeza, J. M. (1885). Memorias y escritos sobre la vida cultural en Orizaba.</li>
+                    <li>Secretaría de Comunicaciones y Obras Públicas. (1910). Carta del Ferrocarril de Orizaba al Ingenio.</li>
+                    <li>Tenorio, M. (2004). Orizaba: historia y sociedad en una ciudad veracruzana.</li>
+                    <li>Universidad Veracruzana. (2016). Museo Religioso de San Antonio.</li>
+                </ol>
+            </div>
+            
+        </section>
+
+    </main>
+
+    <footer class="bg-dark text-white text-center py-3">
+        <div class="container">
+            <p class="mb-0">Proyecto de Portafolio Profesional: Identidad Visual Orizabeña</p>
+            <p class="mb-0 small">Ana Victoria Salvador Delgado | BUAP - Septiembre 2025</p>
+        </div>
+    </footer>
+    
+    <script src="lib/bootstrap.bundle.min.js"></script>
+    <!--<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHPYy2w7D5dE5l5p1+gT5F5X1K5K5Y5e8XN+D8K5J5K5J" crossorigin="anonymous"></script> -->
+
+
+</body>
+</html>
